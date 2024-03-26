@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B956E2BB31C370060C75E /* AppDelegate.swift */; };
 		5EE1FFD92BB2937000A38679 /* OpenInSWAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */; };
 		5EE1FFDB2BB2937000A38679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDA2BB2937000A38679 /* ContentView.swift */; };
 		5EE1FFDD2BB2937200A38679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDC2BB2937200A38679 /* Assets.xcassets */; };
 		5EE1FFE02BB2937200A38679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDF2BB2937200A38679 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5EE1FFFC2BB2991C00A38679 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5EE1FFD52BB2937000A38679 /* OpenInSWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInSWA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9B956E2BB31C370060C75E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E9B95702BB320B60060C75E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5EE1FFD52BB2937000A38679 /* Open in SWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open in SWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInSWAApp.swift; sourceTree = "<group>"; };
 		5EE1FFDA2BB2937000A38679 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5EE1FFDC2BB2937200A38679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +52,7 @@
 		5EE1FFCC2BB2937000A38679 = {
 			isa = PBXGroup;
 			children = (
+				5E9B95702BB320B60060C75E /* README.md */,
 				5EE1FFD72BB2937000A38679 /* OpenInSWA */,
 				5EE1FFD62BB2937000A38679 /* Products */,
 			);
@@ -44,7 +61,7 @@
 		5EE1FFD62BB2937000A38679 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EE1FFD52BB2937000A38679 /* OpenInSWA.app */,
+				5EE1FFD52BB2937000A38679 /* Open in SWA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +69,7 @@
 		5EE1FFD72BB2937000A38679 /* OpenInSWA */ = {
 			isa = PBXGroup;
 			children = (
+				5E9B956E2BB31C370060C75E /* AppDelegate.swift */,
 				5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */,
 				5EE1FFDA2BB2937000A38679 /* ContentView.swift */,
 				5EE1FFDC2BB2937200A38679 /* Assets.xcassets */,
@@ -72,21 +90,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5EE1FFD42BB2937000A38679 /* OpenInSWA */ = {
+		5EE1FFD42BB2937000A38679 /* Open in SWA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EE1FFE42BB2937200A38679 /* Build configuration list for PBXNativeTarget "OpenInSWA" */;
+			buildConfigurationList = 5EE1FFE42BB2937200A38679 /* Build configuration list for PBXNativeTarget "Open in SWA" */;
 			buildPhases = (
 				5EE1FFD12BB2937000A38679 /* Sources */,
 				5EE1FFD22BB2937000A38679 /* Frameworks */,
 				5EE1FFD32BB2937000A38679 /* Resources */,
+				5EE1FFFC2BB2991C00A38679 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = OpenInSWA;
+			name = "Open in SWA";
 			productName = OpenInSWA;
-			productReference = 5EE1FFD52BB2937000A38679 /* OpenInSWA.app */;
+			productReference = 5EE1FFD52BB2937000A38679 /* Open in SWA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EE1FFD42BB2937000A38679 /* OpenInSWA */,
+				5EE1FFD42BB2937000A38679 /* Open in SWA */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */,
 				5EE1FFDB2BB2937000A38679 /* ContentView.swift in Sources */,
 				5EE1FFD92BB2937000A38679 /* OpenInSWAApp.swift in Sources */,
 			);
@@ -268,6 +288,7 @@
 		5EE1FFE52BB2937200A38679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
@@ -284,6 +305,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +317,7 @@
 		5EE1FFE62BB2937200A38679 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
@@ -311,6 +334,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EE1FFE42BB2937200A38679 /* Build configuration list for PBXNativeTarget "OpenInSWA" */ = {
+		5EE1FFE42BB2937200A38679 /* Build configuration list for PBXNativeTarget "Open in SWA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EE1FFE52BB2937200A38679 /* Debug */,
