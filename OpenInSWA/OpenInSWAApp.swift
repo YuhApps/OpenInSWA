@@ -20,6 +20,7 @@ struct OpenInSWAApp: App {
                 .alert("Open in SWA", isPresented: $showAboutAlert) {
                     Button("OK & Close") { showAboutAlert = false }
                     Button("YUH APPS website") { openURL(URL(string: "https://yuhapps.dev")!) }
+                    Button("Source code & Updates") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA")!) }
                 } message: {
                     Text("Version 1.0.0 (2024.03.26)")
                 }
@@ -28,6 +29,7 @@ struct OpenInSWAApp: App {
         .commands {
             CommandGroup(replacing: .appInfo) {
                 Button("About Open in SWA") { showAboutAlert = true }
+                Button("Source code & Updates") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA")!) }
             }
         }
     }
