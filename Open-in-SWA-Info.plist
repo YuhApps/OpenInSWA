@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+          <key>CFBundleTypeRole</key>
+          <string>Viewer</string>
+          <key>CFBundleURLName</key>
+          <string>URLs</string>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>http</string>
+          </array>
+        </dict>
+        <dict>
+          <key>CFBundleTypeRole</key>
+          <string>Viewer</string>
+          <key>CFBundleURLName</key>
+          <string>Secure URLs</string>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>https</string>
+          </array>
+        </dict>
+    </array>
+      
+    <key>NSServices</key>
+    <array>
+        <dict>
+            <key>NSMessage</key>
+            <string>Open in SWA</string>
+            
+            <key>NSPortName</key>
+            <string>Open in SWA</string>
+            
+            <key>NSMenuItem</key>
+            <dict>
+                <key>default</key>
+                <string>Open in SWA</string>
+            </dict>
+            
+            <key>NSRestricted</key>
+            <false/>
+            
+            <key>NSRequiredContext</key>
+            <dict/>
+            
+            <key>NSSendTypes</key>
+            <array>
+                <string>NSStringPboardType</string>
+                <string>NSURLPboardType</string>
+                <string>NSPasteboardTypeString</string>
+                <string>NSPasteboardTypeURL</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>

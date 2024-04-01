@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E834CEF2BB488300002CBDB /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E834CEE2BB488300002CBDB /* ServicesProvider.swift */; };
 		5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B956E2BB31C370060C75E /* AppDelegate.swift */; };
 		5EE1FFD92BB2937000A38679 /* OpenInSWAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */; };
 		5EE1FFDB2BB2937000A38679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDA2BB2937000A38679 /* ContentView.swift */; };
 		5EE1FFDD2BB2937200A38679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDC2BB2937200A38679 /* Assets.xcassets */; };
 		5EE1FFE02BB2937200A38679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDF2BB2937200A38679 /* Preview Assets.xcassets */; };
+		5EE28ED92BBAF2F700C1CE5C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5EE28ED82BBAF2F700C1CE5C /* icon.icns */; };
+		5EE28EDB2BBAF2F700C1CE5C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE28EDA2BBAF2F700C1CE5C /* ShareViewController.swift */; };
+		5EE28EDE2BBAF2F700C1CE5C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5EE28EDD2BBAF2F700C1CE5C /* Base */; };
+		5EE28EE32BBAF2F700C1CE5C /* Open In SWA.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EE28EE12BBAF2F700C1CE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EE1FFCD2BB2937000A38679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EE28ED52BBAF2F700C1CE5C;
+			remoteInfo = "Open In SWA";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5EE1FFFC2BB2991C00A38679 /* Embed Foundation Extensions */ = {
@@ -21,6 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				5EE28EE32BBAF2F700C1CE5C /* Open In SWA.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,18 +44,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E834CEE2BB488300002CBDB /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
 		5E9B956E2BB31C370060C75E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9B95702BB320B60060C75E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5EB7DF8C2BB46F5E00F40AEE /* Open-in-SWA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Open-in-SWA-Info.plist"; sourceTree = "<group>"; };
 		5EE1FFD52BB2937000A38679 /* Open in SWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open in SWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInSWAApp.swift; sourceTree = "<group>"; };
 		5EE1FFDA2BB2937000A38679 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5EE1FFDC2BB2937200A38679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE1FFDF2BB2937200A38679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5EE1FFE12BB2937200A38679 /* OpenInSWA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenInSWA.entitlements; sourceTree = "<group>"; };
+		5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open In SWA.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE28ED82BBAF2F700C1CE5C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		5EE28EDA2BBAF2F700C1CE5C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5EE28EDD2BBAF2F700C1CE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		5EE28EDF2BBAF2F700C1CE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE28EE02BBAF2F700C1CE5C /* Open_In_SWA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Open_In_SWA.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5EE1FFD22BB2937000A38679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE28ED32BBAF2F700C1CE5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,8 +83,10 @@
 		5EE1FFCC2BB2937000A38679 = {
 			isa = PBXGroup;
 			children = (
+				5EB7DF8C2BB46F5E00F40AEE /* Open-in-SWA-Info.plist */,
 				5E9B95702BB320B60060C75E /* README.md */,
 				5EE1FFD72BB2937000A38679 /* OpenInSWA */,
+				5EE28ED72BBAF2F700C1CE5C /* Open In SWA */,
 				5EE1FFD62BB2937000A38679 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5EE1FFD52BB2937000A38679 /* Open in SWA.app */,
+				5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9B956E2BB31C370060C75E /* AppDelegate.swift */,
+				5E834CEE2BB488300002CBDB /* ServicesProvider.swift */,
 				5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */,
 				5EE1FFDA2BB2937000A38679 /* ContentView.swift */,
 				5EE1FFDC2BB2937200A38679 /* Assets.xcassets */,
@@ -87,6 +122,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5EE28ED72BBAF2F700C1CE5C /* Open In SWA */ = {
+			isa = PBXGroup;
+			children = (
+				5EE28ED82BBAF2F700C1CE5C /* icon.icns */,
+				5EE28EDA2BBAF2F700C1CE5C /* ShareViewController.swift */,
+				5EE28EDC2BBAF2F700C1CE5C /* ShareViewController.xib */,
+				5EE28EDF2BBAF2F700C1CE5C /* Info.plist */,
+				5EE28EE02BBAF2F700C1CE5C /* Open_In_SWA.entitlements */,
+			);
+			path = "Open In SWA";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,11 +149,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				5EE28EE22BBAF2F700C1CE5C /* PBXTargetDependency */,
 			);
 			name = "Open in SWA";
 			productName = OpenInSWA;
 			productReference = 5EE1FFD52BB2937000A38679 /* Open in SWA.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5EE28ED52BBAF2F700C1CE5C /* Open In SWA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EE28EE42BBAF2F700C1CE5C /* Build configuration list for PBXNativeTarget "Open In SWA" */;
+			buildPhases = (
+				5EE28ED22BBAF2F700C1CE5C /* Sources */,
+				5EE28ED32BBAF2F700C1CE5C /* Frameworks */,
+				5EE28ED42BBAF2F700C1CE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open In SWA";
+			productName = "Open In SWA";
+			productReference = 5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -119,6 +184,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					5EE1FFD42BB2937000A38679 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					5EE28ED52BBAF2F700C1CE5C = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -137,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				5EE1FFD42BB2937000A38679 /* Open in SWA */,
+				5EE28ED52BBAF2F700C1CE5C /* Open In SWA */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +220,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5EE28ED42BBAF2F700C1CE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE28ED92BBAF2F700C1CE5C /* icon.icns in Resources */,
+				5EE28EDE2BBAF2F700C1CE5C /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -158,13 +236,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E834CEF2BB488300002CBDB /* ServicesProvider.swift in Sources */,
 				5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */,
 				5EE1FFDB2BB2937000A38679 /* ContentView.swift in Sources */,
 				5EE1FFD92BB2937000A38679 /* OpenInSWAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5EE28ED22BBAF2F700C1CE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE28EDB2BBAF2F700C1CE5C /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EE28EE22BBAF2F700C1CE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EE28ED52BBAF2F700C1CE5C /* Open In SWA */;
+			targetProxy = 5EE28EE12BBAF2F700C1CE5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EE28EDC2BBAF2F700C1CE5C /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EE28EDD2BBAF2F700C1CE5C /* Base */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5EE1FFE22BB2937200A38679 /* Debug */ = {
@@ -294,19 +400,20 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInSWA/Preview Content\"";
 				DEVELOPMENT_TEAM = VQTYUZQ47C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open-in-SWA-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -323,21 +430,78 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInSWA/Preview Content\"";
 				DEVELOPMENT_TEAM = VQTYUZQ47C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open-in-SWA-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5EE28EE52BBAF2F700C1CE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open In SWA/Open_In_SWA.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open In SWA/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Open In SWA";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.QuickOpen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5EE28EE62BBAF2F700C1CE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open In SWA/Open_In_SWA.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open In SWA/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Open In SWA";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.QuickOpen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -360,6 +524,15 @@
 			buildConfigurations = (
 				5EE1FFE52BB2937200A38679 /* Debug */,
 				5EE1FFE62BB2937200A38679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EE28EE42BBAF2F700C1CE5C /* Build configuration list for PBXNativeTarget "Open In SWA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE28EE52BBAF2F700C1CE5C /* Debug */,
+				5EE28EE62BBAF2F700C1CE5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

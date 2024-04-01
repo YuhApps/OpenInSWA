@@ -9,7 +9,18 @@ import SwiftUI
 
 struct InvalidURLError: LocalizedError {
     var errorDescription: String? {
-        return "Invalid URL"
+        return "Invalid URL."
+    }
+    
+    var errorMessage: String? {
+        return "Message"
+    }
+}
+
+struct NoSWAError: LocalizedError {
+    
+    var errorDescription: String? {
+        return "No Safari Web Apps can handle the given URL."
     }
     
     var errorMessage: String? {
@@ -20,9 +31,11 @@ struct InvalidURLError: LocalizedError {
 struct ContentView: View {
     
     private let userApplicationsDirectory = FileManager.default.homeDirectoryForCurrentUser.appending(path: "Applications")
+    @Environment(\.scenePhase) var scenePhase
     
     @State private var showFileImporter = false
     @State private var showInvalidURLAlert = false
+    @State private var showNoSWAAlert = false
     @State private var text = ""
     
     
@@ -34,6 +47,8 @@ struct ContentView: View {
             .multilineTextAlignment(.center)
             .padding(.horizontal, 20)
             .onAppear(perform: pasteCopiedUrlIfNeeded)
+            .onReceive(NotificationCenter.default.publisher(for: NSWindow.willCloseNotification), perform: clearText)
+            .onReceive(NotificationCenter.default.publisher(for: NSWindow.didBecomeMainNotification), perform: pasteCopiedUrlIfNeeded)
             .onSubmit(openInDefaultSWA)
             HStack {
                 Button("Open in Default SWA", action: openInDefaultSWA)
@@ -55,13 +70,46 @@ struct ContentView: View {
                 showInvalidURLAlert = false
             }
         }
+        .alert(isPresented: $showNoSWAAlert, error: NoSWAError()) {
+            Button("Close") {
+                showNoSWAAlert = false
+            }
+        }
     }
     
     func pasteCopiedUrlIfNeeded() {
         let pasteboard = NSPasteboard.general
         if let string = pasteboard.string(forType: .string), string.starts(with: "https://") {
-            self.text = string
+            self.text = sanitizeURL(string)
         }
+    }
+    
+    func pasteCopiedUrlIfNeeded(_ output: NotificationCenter.Publisher.Output) {
+        if text.isEmpty == false {
+            return
+        }
+        let pasteboard = NSPasteboard.general
+        if let string = pasteboard.string(forType: .string), string.starts(with: "https://") {
+            self.text = sanitizeURL(string)
+        }
+    }
+    
+    // Santize the given URL to get the final URL after redirection
+    func sanitizeURL(_ url: String) -> String {
+        if url.contains("https%3A%2F%2F") {
+            let startIndex = url.range(of: "https%3A%2F%2F")!.lowerBound
+            var str = String(url[startIndex...]).removingPercentEncoding!
+            if str.contains("&") && !str.contains("?") {
+                let endIndex = str.index(before: str.firstIndex(of: "&")!)
+                str = String(str[...endIndex])
+            }
+            return str
+        }
+        return url
+    }
+    
+    func clearText(_ output: NotificationCenter.Publisher.Output) {
+        text = ""
     }
     
     func openInDefaultSWA() {
@@ -70,7 +118,11 @@ struct ContentView: View {
             return
         }
         
-        guard let applications = try? FileManager.default.contentsOfDirectory(at: userApplicationsDirectory, includingPropertiesForKeys: [.isApplicationKey]) else { return }
+        guard let applications = try? FileManager.default.contentsOfDirectory(at: userApplicationsDirectory, includingPropertiesForKeys: [.isApplicationKey]) else {
+            return
+        }
+        
+        let text = sanitizeURL(self.text)
         
         for application in applications {
             if let bundle = Bundle(url: application), let manifest = bundle.infoDictionary?["Manifest"] as? Dictionary<String,Any> {
@@ -81,10 +133,12 @@ struct ContentView: View {
                     let configuration = NSWorkspace.OpenConfiguration()
                     configuration.arguments = [text]
                     NSWorkspace.shared.open([textUrl], withApplicationAt: application, configuration: configuration)
-                    break
+                    return
                 }
             }
         }
+        
+        showNoSWAAlert = true
     }
 }
 
