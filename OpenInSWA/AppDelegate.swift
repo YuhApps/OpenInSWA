@@ -42,7 +42,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     let appStartUrlString = manifest["start_url"] as! String
                     let appStartUrlHost = URL(string: appStartUrlString)!.host()!
                     let textUrl = URL(string: text)!
-                    if appStartUrlHost == textUrl.host()! {
+                    let textUrlHost = textUrl.host()!
+                    if appStartUrlHost == textUrlHost || ("www." + appStartUrlHost) == textUrlHost || appStartUrlHost == ("www." + textUrlHost) {
                         let configuration = NSWorkspace.OpenConfiguration()
                         configuration.arguments = [text]
                         NSWorkspace.shared.open([textUrl], withApplicationAt: application, configuration: configuration)
@@ -55,7 +56,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let alert = NSAlert()
         alert.messageText = "No SWA can handle the given URL"
         alert.informativeText = sanitizeURL(urls.first!.absoluteString)
-        alert.runModal()
+        alert.addButton(withTitle: "Close")
+        alert.addButton(withTitle: "Open with Safari")
+        if alert.runModal() == .alertSecondButtonReturn {
+            for url in urls {
+                let text = sanitizeURL(url.absoluteString)
+                NSWorkspace.shared.open(URL(string:"x-safari-" + text)!)
+            }
+        }
     }
     
     func removeUnncessaryMenuItems() {

@@ -74,6 +74,10 @@ struct ContentView: View {
             Button("Close") {
                 showNoSWAAlert = false
             }
+            Button("Open in Safari") {
+                let url = URL(string:"x-safari-" + text)!
+                NSWorkspace.shared.open(url)
+            }
         }
     }
     
@@ -129,7 +133,8 @@ struct ContentView: View {
                 let appStartUrlString = manifest["start_url"] as! String
                 let appStartUrlHost = URL(string: appStartUrlString)!.host()!
                 let textUrl = URL(string: text)!
-                if appStartUrlHost == textUrl.host()! {
+                let textUrlHost = textUrl.host()!
+                if appStartUrlHost == textUrlHost || ("www." + appStartUrlHost) == textUrlHost || appStartUrlHost == ("www." + textUrlHost) {
                     let configuration = NSWorkspace.OpenConfiguration()
                     configuration.arguments = [text]
                     NSWorkspace.shared.open([textUrl], withApplicationAt: application, configuration: configuration)

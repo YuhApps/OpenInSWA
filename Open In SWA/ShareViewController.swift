@@ -26,7 +26,6 @@ class ShareViewController: NSViewController {
                     let bundle = Bundle.main
                     let containerAppBundle = bundle.bundleURL.deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
                     NSWorkspace.shared.open([url!], withApplicationAt: containerAppBundle, configuration: NSWorkspace.OpenConfiguration()) { _,_ in
-//                        self.extensionContext!.completeRequest(returningItems: [NSExtensionItem()], completionHandler: nil)
                         let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSUserCancelledError, userInfo: nil)
                         self.extensionContext!.cancelRequest(withError: cancelError)
                     }
