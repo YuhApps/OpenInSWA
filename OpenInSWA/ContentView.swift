@@ -100,13 +100,19 @@ struct ContentView: View {
     
     // Santize the given URL to get the final URL after redirection
     func sanitizeURL(_ url: String) -> String {
-        if url.contains("https%3A%2F%2F") {
+        if url.contains("https%3A%2F%2F") { // For example, https://l.instagram.com/?u=http%3A%2F%2Fmeta.com
             let startIndex = url.range(of: "https%3A%2F%2F")!.lowerBound
             var str = String(url[startIndex...]).removingPercentEncoding!
             if str.contains("&") && !str.contains("?") {
                 let endIndex = str.index(before: str.firstIndex(of: "&")!)
                 str = String(str[...endIndex])
             }
+            return str
+        } else if url.contains("?url=https://") || url.contains("&url=https://") { // For example https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.youtube.com/%40Apple
+            let queries = URL(string: url)!.query()!.split(separator: "&", omittingEmptySubsequences: true)
+            let urlQuery = queries.first(where: { String($0).starts(with: "url") })!
+            let startIndex = urlQuery.range(of: "https://")!.lowerBound
+            let str = String(urlQuery[startIndex...]).removingPercentEncoding!
             return str
         }
         return url

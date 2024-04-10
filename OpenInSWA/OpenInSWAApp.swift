@@ -22,7 +22,7 @@ struct OpenInSWAApp: App {
                     Button("YUH APPS website") { openURL(URL(string: "https://yuhapps.dev")!) }
                     Button("Source code & Updates") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA")!) }
                 } message: {
-                    Text("Version 1.0.1 (2024.04.01)")
+                    Text("Version 1.0.2 (2024.04.10)")
                 }
         }
         .windowResizability(.contentSize)
