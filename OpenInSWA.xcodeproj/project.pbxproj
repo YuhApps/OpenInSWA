@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E834CEF2BB488300002CBDB /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E834CEE2BB488300002CBDB /* ServicesProvider.swift */; };
 		5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B956E2BB31C370060C75E /* AppDelegate.swift */; };
+		5EA246B82BC6B921004EF586 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA246B72BC6B921004EF586 /* SettingsView.swift */; };
 		5EE1FFD92BB2937000A38679 /* OpenInSWAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */; };
 		5EE1FFDB2BB2937000A38679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDA2BB2937000A38679 /* ContentView.swift */; };
 		5EE1FFDD2BB2937200A38679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDC2BB2937200A38679 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		5E834CEE2BB488300002CBDB /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
 		5E9B956E2BB31C370060C75E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9B95702BB320B60060C75E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5EA246B72BC6B921004EF586 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5EB7DF8C2BB46F5E00F40AEE /* Open-in-SWA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Open-in-SWA-Info.plist"; sourceTree = "<group>"; };
 		5EE1FFD52BB2937000A38679 /* Open in SWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open in SWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInSWAApp.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				5E834CEE2BB488300002CBDB /* ServicesProvider.swift */,
 				5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */,
 				5EE1FFDA2BB2937000A38679 /* ContentView.swift */,
+				5EA246B72BC6B921004EF586 /* SettingsView.swift */,
 				5EE1FFDC2BB2937200A38679 /* Assets.xcassets */,
 				5EE1FFE12BB2937200A38679 /* OpenInSWA.entitlements */,
 				5EE1FFDE2BB2937200A38679 /* Preview Content */,
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA246B82BC6B921004EF586 /* SettingsView.swift in Sources */,
 				5E834CEF2BB488300002CBDB /* ServicesProvider.swift in Sources */,
 				5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */,
 				5EE1FFDB2BB2937000A38679 /* ContentView.swift in Sources */,
@@ -400,7 +404,7 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInSWA/Preview Content\"";
 				DEVELOPMENT_TEAM = VQTYUZQ47C;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -413,7 +417,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -430,7 +434,7 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInSWA/Preview Content\"";
 				DEVELOPMENT_TEAM = VQTYUZQ47C;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -443,7 +447,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -7,6 +7,7 @@
 
 import Cocoa
 
+@Observable
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -20,12 +21,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         false
     }
+
+    @objc func clearClipboard(_ sender: NSMenuItem) {
+        NSPasteboard.general.clearContents()
+    }
     
     func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
         let userApplicationsDirectory = FileManager.default.homeDirectoryForCurrentUser.appending(path: "Applications")
-        guard let applications = try? FileManager.default.contentsOfDirectory(at: userApplicationsDirectory, includingPropertiesForKeys: [.isApplicationKey]) else {
+        guard let applications = try? FileManager.default.contentsOfDirectory(at: userApplicationsDirectory, includingPropertiesForKeys: [.isApplicationKey]), applications.count > 0 else {
             return nil
         }
+
         let menu = NSMenu()
         for application in applications.sorted(by: { $0.lastPathComponent.localizedCompare($1.lastPathComponent).rawValue > 0 }) {
             if application.lastPathComponent.starts(with: ".") || application.pathExtension != "app" {
@@ -38,6 +44,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             menuItem.image!.size = NSSize(width: 16, height: 16)
             menu.addItem(menuItem)
         }
+        menu.addItem(NSMenuItem.separator())
+        menu.addItem(NSMenuItem(title: "Clear Clipboard", action: #selector(clearClipboard), keyEquivalent: ""))
         return menu
     }
     
@@ -71,6 +79,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     if appStartUrlHost == textUrlHost || ("www." + appStartUrlHost) == textUrlHost || appStartUrlHost == ("www." + textUrlHost) {
                         let configuration = NSWorkspace.OpenConfiguration()
                         configuration.arguments = [text]
+                        configuration.activates = true
                         NSWorkspace.shared.open([textUrl], withApplicationAt: application, configuration: configuration)
                         return
                     }
@@ -114,6 +123,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let str = String(urlQuery[startIndex...]).removingPercentEncoding!
             return str
         }
+        // TODO: Replace "https://m." with "https://www."
         return url
     }
     

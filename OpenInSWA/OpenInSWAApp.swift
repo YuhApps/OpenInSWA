@@ -13,6 +13,11 @@ struct OpenInSWAApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @Environment(\.openURL) var openURL
     @State private var showAboutAlert = false
+    @State private var showAnUpdateAvailable = false
+    @State private var showNoUpdateAvailable = false
+    @State private var showSettingsSheet = false
+    
+    let build_date = "(2024.04.15)"
     
     var body: some Scene {
         Window("Open in Safari Web App", id: "main") {
@@ -20,17 +25,64 @@ struct OpenInSWAApp: App {
                 .alert("Open in SWA", isPresented: $showAboutAlert) {
                     Button("OK & Close") { showAboutAlert = false }
                     Button("YUH APPS website") { openURL(URL(string: "https://yuhapps.dev")!) }
-                    Button("Source code & Updates") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA")!) }
+                    Button("Source code") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA")!) }
                 } message: {
-                    Text("Version 1.0.3 (2024.04.10)")
+                    Text("Version \(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!) \(build_date)")
                 }
+                .alert("There's a new update", isPresented: $showAnUpdateAvailable) {
+                    Button("Download now") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA/releases")!) }
+                }
+                .alert("You have the latest version", isPresented: $showNoUpdateAvailable) {
+                    Button("Close") { showNoUpdateAvailable = false }
+                }
+                /* Unused for now
+                .sheet(isPresented: $showSettingsSheet) {
+                    SettingsView()
+                }
+                 */
+                .environment(\.appDelegate, appDelegate)
         }
         .windowResizability(.contentSize)
         .commands {
             CommandGroup(replacing: .appInfo) {
                 Button("About Open in SWA") { showAboutAlert = true }
-                Button("Source code & Updates") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA")!) }
+                Button("Check for update") { Task { await checkForUpdate() } }
             }
         }
+    }
+    
+    func checkForUpdate() async {
+        let url = URL(string: "https://api.github.com/repos/YuhApps/OpenInSWA/releases/latest")!
+        let (data, _) = try! await URLSession.shared.data(from: url)
+        let response = try! JSONSerialization.jsonObject(with: data) as! [String: Any]
+        let newVersion = response["name"]! as! String
+        let oldVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"]! as! String
+        let result = isUpdateAvailable(oldVersion: oldVersion, newVersion: newVersion)
+        showAnUpdateAvailable = result
+        showNoUpdateAvailable = !result
+    }
+    
+    func isUpdateAvailable(oldVersion: String, newVersion: String) -> Bool {
+        let ov = oldVersion.split(separator: ".")
+        let nv = newVersion.split(separator: ".")
+        for i in 0...2 {
+            let o = Int(ov[i])!
+            let n = Int(nv[i])!
+            if n > o {
+                return true
+            }
+        }
+        return false
+    }
+}
+
+private struct AppDelegateKey: EnvironmentKey {
+    static let defaultValue: AppDelegate = AppDelegate()
+}
+
+extension EnvironmentValues {
+    var appDelegate: AppDelegate {
+        get { self[AppDelegateKey.self] }
+        set { self[AppDelegateKey.self] = newValue }
     }
 }

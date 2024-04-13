@@ -11,8 +11,7 @@ import UniformTypeIdentifiers
 class ShareViewController: NSViewController {
 
     override var nibName: NSNib.Name? {
-//        return NSNib.Name("ShareViewController")
-        return nil
+        return NSNib.Name("ShareViewController")
     }
 
     override func loadView() {

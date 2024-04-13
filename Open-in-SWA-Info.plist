@@ -51,36 +51,5 @@
     <array>
         <string>NSUserActivityTypeBrowsingWeb</string>
     </array>
-      
-    <key>NSServices</key>
-    <array>
-        <dict>
-            <key>NSMessage</key>
-            <string>Open in SWA</string>
-            
-            <key>NSPortName</key>
-            <string>Open in SWA</string>
-            
-            <key>NSMenuItem</key>
-            <dict>
-                <key>default</key>
-                <string>Open in SWA</string>
-            </dict>
-            
-            <key>NSRestricted</key>
-            <false/>
-            
-            <key>NSRequiredContext</key>
-            <dict/>
-            
-            <key>NSSendTypes</key>
-            <array>
-                <string>NSStringPboardType</string>
-                <string>NSURLPboardType</string>
-                <string>NSPasteboardTypeString</string>
-                <string>NSPasteboardTypeURL</string>
-            </array>
-        </dict>
-    </array>
 </dict>
 </plist>
