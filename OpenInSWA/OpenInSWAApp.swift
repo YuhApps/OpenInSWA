@@ -25,7 +25,28 @@ struct OpenInSWAApp: App {
                 .alert("Open in SWA", isPresented: $showAboutAlert) {
                     Button("OK & Close") { showAboutAlert = false }
                     Button("YUH APPS website") { openURL(URL(string: "https://yuhapps.dev")!) }
-                    Button("Source code") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA")!) }
+                    Button("Source code") {
+                        let textUrl = URL(string: "https://github.com/YuhApps/OpenInSWA")!
+                        let userApplicationsDirectory = FileManager.default.homeDirectoryForCurrentUser.appending(path: "Applications")
+                        guard let applications = try? FileManager.default.contentsOfDirectory(at: userApplicationsDirectory, includingPropertiesForKeys: [.isApplicationKey]) else {
+                            return
+                        }
+                        for application in applications {
+                            if let bundle = Bundle(url: application), let manifest = bundle.infoDictionary?["Manifest"] as? Dictionary<String,Any> {
+                                let appStartUrlString = manifest["start_url"] as! String
+                                let appStartUrlHost = URL(string: appStartUrlString)!.host()!
+                                let textUrlHost = textUrl.host()!
+                                if appStartUrlHost == textUrlHost || ("www." + appStartUrlHost) == textUrlHost || appStartUrlHost == ("www." + textUrlHost) {
+                                    let configuration = NSWorkspace.OpenConfiguration()
+                                    configuration.arguments = [textUrl.absoluteString]
+                                    configuration.activates = true
+                                    NSWorkspace.shared.open([textUrl], withApplicationAt: application, configuration: configuration)
+                                    return
+                                }
+                            }
+                        }
+                        openURL(textUrl)
+                    }
                 } message: {
                     Text("Version \(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!) \(build_date)")
                 }
