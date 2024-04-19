@@ -17,7 +17,7 @@ struct OpenInSWAApp: App {
     @State private var showNoUpdateAvailable = false
     @State private var showSettingsSheet = false
     
-    let build_date = "(2024.04.13)"
+    let build_date = "(2024.04.16)"
     
     var body: some Scene {
         Window("Open in Safari Web App", id: "main") {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0944A52BCEB93F0005B1F1 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5E0944A42BCEB93F0005B1F1 /* icon.icns */; };
+		5E0944A72BCEB93F0005B1F1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0944A62BCEB93F0005B1F1 /* ShareViewController.swift */; };
+		5E0944AA2BCEB93F0005B1F1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5E0944A92BCEB93F0005B1F1 /* Base */; };
+		5E0944AF2BCEB93F0005B1F1 /* Open In Safari Private.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5E0944A22BCEB93F0005B1F1 /* Open In Safari Private.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5E834CEF2BB488300002CBDB /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E834CEE2BB488300002CBDB /* ServicesProvider.swift */; };
 		5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B956E2BB31C370060C75E /* AppDelegate.swift */; };
 		5EA246B82BC6B921004EF586 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA246B72BC6B921004EF586 /* SettingsView.swift */; };
@@ -21,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5E0944AD2BCEB93F0005B1F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EE1FFCD2BB2937000A38679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E0944A12BCEB93F0005B1F1;
+			remoteInfo = "Open In Safari Private";
+		};
 		5EE28EE12BBAF2F700C1CE5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5EE1FFCD2BB2937000A38679 /* Project object */;
@@ -37,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				5E0944AF2BCEB93F0005B1F1 /* Open In Safari Private.appex in Embed Foundation Extensions */,
 				5EE28EE32BBAF2F700C1CE5C /* Open In SWA.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -45,6 +57,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E0944A22BCEB93F0005B1F1 /* Open In Safari Private.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open In Safari Private.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0944A42BCEB93F0005B1F1 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		5E0944A62BCEB93F0005B1F1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5E0944A92BCEB93F0005B1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		5E0944AB2BCEB93F0005B1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0944AC2BCEB93F0005B1F1 /* Open_In_Safari_Private.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Open_In_Safari_Private.entitlements; sourceTree = "<group>"; };
 		5E834CEE2BB488300002CBDB /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
 		5E9B956E2BB31C370060C75E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9B95702BB320B60060C75E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -65,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5E09449F2BCEB93F0005B1F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EE1FFD22BB2937000A38679 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +107,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0944A32BCEB93F0005B1F1 /* Open In Safari Private */ = {
+			isa = PBXGroup;
+			children = (
+				5E0944A42BCEB93F0005B1F1 /* icon.icns */,
+				5E0944A62BCEB93F0005B1F1 /* ShareViewController.swift */,
+				5E0944A82BCEB93F0005B1F1 /* ShareViewController.xib */,
+				5E0944AB2BCEB93F0005B1F1 /* Info.plist */,
+				5E0944AC2BCEB93F0005B1F1 /* Open_In_Safari_Private.entitlements */,
+			);
+			path = "Open In Safari Private";
+			sourceTree = "<group>";
+		};
 		5EE1FFCC2BB2937000A38679 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +126,7 @@
 				5E9B95702BB320B60060C75E /* README.md */,
 				5EE1FFD72BB2937000A38679 /* OpenInSWA */,
 				5EE28ED72BBAF2F700C1CE5C /* Open In SWA */,
+				5E0944A32BCEB93F0005B1F1 /* Open In Safari Private */,
 				5EE1FFD62BB2937000A38679 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +136,7 @@
 			children = (
 				5EE1FFD52BB2937000A38679 /* Open in SWA.app */,
 				5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */,
+				5E0944A22BCEB93F0005B1F1 /* Open In Safari Private.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +179,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5E0944A12BCEB93F0005B1F1 /* Open In Safari Private */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E0944B22BCEB93F0005B1F1 /* Build configuration list for PBXNativeTarget "Open In Safari Private" */;
+			buildPhases = (
+				5E09449E2BCEB93F0005B1F1 /* Sources */,
+				5E09449F2BCEB93F0005B1F1 /* Frameworks */,
+				5E0944A02BCEB93F0005B1F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open In Safari Private";
+			productName = "Open In Safari Private";
+			productReference = 5E0944A22BCEB93F0005B1F1 /* Open In Safari Private.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5EE1FFD42BB2937000A38679 /* Open in SWA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EE1FFE42BB2937200A38679 /* Build configuration list for PBXNativeTarget "Open in SWA" */;
@@ -153,6 +209,7 @@
 			);
 			dependencies = (
 				5EE28EE22BBAF2F700C1CE5C /* PBXTargetDependency */,
+				5E0944AE2BCEB93F0005B1F1 /* PBXTargetDependency */,
 			);
 			name = "Open in SWA";
 			productName = OpenInSWA;
@@ -186,6 +243,9 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					5E0944A12BCEB93F0005B1F1 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					5EE1FFD42BB2937000A38679 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -209,11 +269,21 @@
 			targets = (
 				5EE1FFD42BB2937000A38679 /* Open in SWA */,
 				5EE28ED52BBAF2F700C1CE5C /* Open In SWA */,
+				5E0944A12BCEB93F0005B1F1 /* Open In Safari Private */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5E0944A02BCEB93F0005B1F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E0944A52BCEB93F0005B1F1 /* icon.icns in Resources */,
+				5E0944AA2BCEB93F0005B1F1 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EE1FFD32BB2937000A38679 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +305,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5E09449E2BCEB93F0005B1F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E0944A72BCEB93F0005B1F1 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EE1FFD12BB2937000A38679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +336,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5E0944AE2BCEB93F0005B1F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E0944A12BCEB93F0005B1F1 /* Open In Safari Private */;
+			targetProxy = 5E0944AD2BCEB93F0005B1F1 /* PBXContainerItemProxy */;
+		};
 		5EE28EE22BBAF2F700C1CE5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5EE28ED52BBAF2F700C1CE5C /* Open In SWA */;
@@ -266,6 +349,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5E0944A82BCEB93F0005B1F1 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E0944A92BCEB93F0005B1F1 /* Base */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
 		5EE28EDC2BBAF2F700C1CE5C /* ShareViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,6 +368,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5E0944B02BCEB93F0005B1F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open In Safari Private/Open_In_Safari_Private.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open In Safari Private/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Open In Safari Private";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.SafariPrivate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5E0944B12BCEB93F0005B1F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open In Safari Private/Open_In_Safari_Private.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open In Safari Private/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Open In Safari Private";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.SafariPrivate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		5EE1FFE22BB2937200A38679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,20 +549,21 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInSWA/Preview Content\"";
 				DEVELOPMENT_TEAM = VQTYUZQ47C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Open-in-SWA-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -434,20 +580,21 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInSWA/OpenInSWA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInSWA/Preview Content\"";
 				DEVELOPMENT_TEAM = VQTYUZQ47C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Open-in-SWA-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -514,6 +661,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5E0944B22BCEB93F0005B1F1 /* Build configuration list for PBXNativeTarget "Open In Safari Private" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E0944B02BCEB93F0005B1F1 /* Debug */,
+				5E0944B12BCEB93F0005B1F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5EE1FFD02BB2937000A38679 /* Build configuration list for PBXProject "OpenInSWA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

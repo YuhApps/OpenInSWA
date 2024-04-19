@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InvalidURLError: LocalizedError {
     var errorDescription: String? {
-        return "Invalid URL."
+        return "Invalid URL"
     }
     
     var errorMessage: String? {
@@ -109,34 +109,11 @@ struct ContentView: View {
     }
     
     func openInDefaultSWA() {
-        if text.starts(with: "https://") == false {
+        if text.starts(with: "https://") == false && text.starts(with: "x-safari-private-https://") == false {
             showInvalidURLAlert = true
-            return
+        } else {
+            appDelegate.application(NSApplication.shared, open: [URL(string: text)!])
         }
-        
-        guard let applications = try? FileManager.default.contentsOfDirectory(at: userApplicationsDirectory, includingPropertiesForKeys: [.isApplicationKey]) else {
-            return
-        }
-        
-        let text = sanitizeURL(self.text)
-        
-        for application in applications {
-            if let bundle = Bundle(url: application), let manifest = bundle.infoDictionary?["Manifest"] as? Dictionary<String,Any> {
-                let appStartUrlString = manifest["start_url"] as! String
-                let appStartUrlHost = URL(string: appStartUrlString)!.host()!
-                let textUrl = URL(string: text)!
-                let textUrlHost = textUrl.host()!
-                if appStartUrlHost == textUrlHost || ("www." + appStartUrlHost) == textUrlHost || appStartUrlHost == ("www." + textUrlHost) {
-                    let configuration = NSWorkspace.OpenConfiguration()
-                    configuration.arguments = [text]
-                    configuration.activates = true
-                    NSWorkspace.shared.open([textUrl], withApplicationAt: application, configuration: configuration)
-                    return
-                }
-            }
-        }
-        
-        showNoSWAAlert = true
     }
 }
 

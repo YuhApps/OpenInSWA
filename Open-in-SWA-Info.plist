@@ -46,10 +46,20 @@
                 <string>https</string>
             </array>
         </dict>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>Safari Start Page</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>x-safari-private-https</string>
+            </array>
+        </dict>
     </array>
     <key>NSUserActivityTypes</key>
     <array>
         <string>NSUserActivityTypeBrowsingWeb</string>
     </array>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>Open Safari Private</string>
 </dict>
 </plist>
