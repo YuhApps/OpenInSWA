@@ -12,20 +12,49 @@ struct OpenInSWAApp: App {
     
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @Environment(\.openURL) var openURL
-    @State private var showAboutAlert = false
-    @State private var showAnUpdateAvailable = false
-    @State private var showNoUpdateAvailable = false
-    @State private var showSettingsSheet = false
+    @State private var showAboutAlert = false {
+        didSet {
+            appDelegate.removeUnncessaryMenuItems()
+        }
+    }
+    @State private var showAnUpdateAvailable = false {
+        didSet {
+            appDelegate.removeUnncessaryMenuItems()
+        }
+    }
+    @State private var showNoUpdateAvailable = false {
+        didSet {
+            appDelegate.removeUnncessaryMenuItems()
+        }
+    }
+    @State private var showSettingsSheet = false {
+        didSet {
+            appDelegate.removeUnncessaryMenuItems()
+        }
+    }
     
     let build_date = "(2024.04.16)"
     
     var body: some Scene {
         Window("Open in Safari Web App", id: "main") {
             ContentView()
-                .alert("Open in SWA", isPresented: $showAboutAlert) {
-                    Button("OK & Close") { showAboutAlert = false }
-                    Button("YUH APPS website") { openURL(URL(string: "https://yuhapps.dev")!) }
-                    Button("Source code") {
+                /* Unused for now
+                .sheet(isPresented: $showSettingsSheet) {
+                    SettingsView()
+                }
+                 */
+                .environment(\.appDelegate, appDelegate)
+        }
+        .windowResizability(.contentSize)
+        .commands {
+            CommandGroup(replacing: .appInfo) {
+                Button("About Open in SWA") {
+                    let alert = NSAlert()
+                    alert.messageText = "Open In SWA"
+                    alert.informativeText = "Version \(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!) \(build_date)"
+                    alert.addButton(withTitle: "OK & Close")
+                    alert.addButton(withTitle: "Source code")
+                    if alert.runModal() == .alertSecondButtonReturn {
                         let textUrl = URL(string: "https://github.com/YuhApps/OpenInSWA")!
                         let userApplicationsDirectory = FileManager.default.homeDirectoryForCurrentUser.appending(path: "Applications")
                         guard let applications = try? FileManager.default.contentsOfDirectory(at: userApplicationsDirectory, includingPropertiesForKeys: [.isApplicationKey]) else {
@@ -47,26 +76,7 @@ struct OpenInSWAApp: App {
                         }
                         openURL(textUrl)
                     }
-                } message: {
-                    Text("Version \(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!) \(build_date)")
                 }
-                .alert("There's a new update", isPresented: $showAnUpdateAvailable) {
-                    Button("Download now") { openURL(URL(string: "https://github.com/YuhApps/OpenInSWA/releases")!) }
-                }
-                .alert("You have the latest version", isPresented: $showNoUpdateAvailable) {
-                    Button("Close") { showNoUpdateAvailable = false }
-                }
-                /* Unused for now
-                .sheet(isPresented: $showSettingsSheet) {
-                    SettingsView()
-                }
-                 */
-                .environment(\.appDelegate, appDelegate)
-        }
-        .windowResizability(.contentSize)
-        .commands {
-            CommandGroup(replacing: .appInfo) {
-                Button("About Open in SWA") { showAboutAlert = true }
                 Button("Check for update") { Task { await checkForUpdate() } }
             }
         }
@@ -78,9 +88,23 @@ struct OpenInSWAApp: App {
         let response = try! JSONSerialization.jsonObject(with: data) as! [String: Any]
         let newVersion = response["name"]! as! String
         let oldVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"]! as! String
-        let result = isUpdateAvailable(oldVersion: oldVersion, newVersion: newVersion)
-        showAnUpdateAvailable = result
-        showNoUpdateAvailable = !result
+        let isUpdateAvailable = isUpdateAvailable(oldVersion: oldVersion, newVersion: newVersion)
+        if isUpdateAvailable {
+            let alert = NSAlert()
+            alert.messageText = "Open In SWA"
+            alert.informativeText = "There's a new update"
+            alert.addButton(withTitle: "Download")
+            alert.addButton(withTitle: "Not now")
+            if alert.runModal() == .alertFirstButtonReturn {
+                openURL(URL(string: "https://github.com/YuhApps/OpenInSWA/releases")!)
+            }
+        } else {
+            let alert = NSAlert()
+            alert.messageText = "Open In SWA"
+            alert.informativeText = "You have the latest version"
+            alert.runModal()
+        }
+        
     }
     
     func isUpdateAvailable(oldVersion: String, newVersion: String) -> Bool {

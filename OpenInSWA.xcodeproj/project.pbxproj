@@ -11,17 +11,25 @@
 		5E0944A72BCEB93F0005B1F1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0944A62BCEB93F0005B1F1 /* ShareViewController.swift */; };
 		5E0944AA2BCEB93F0005B1F1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5E0944A92BCEB93F0005B1F1 /* Base */; };
 		5E0944AF2BCEB93F0005B1F1 /* Open In Safari Private.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5E0944A22BCEB93F0005B1F1 /* Open In Safari Private.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5E74687F2BD8ECEC0094C600 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5E74687E2BD8ECEC0094C600 /* icon.icns */; };
+		5E7468812BD8ECEC0094C600 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7468802BD8ECEC0094C600 /* ShareViewController.swift */; };
+		5E7468842BD8ECEC0094C600 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5E7468832BD8ECEC0094C600 /* Base */; };
+		5E7468892BD8ECEC0094C600 /* Copy Image.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5E74687C2BD8ECEC0094C600 /* Copy Image.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5E7468942BD8ED7E0094C600 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5E7468932BD8ED7E0094C600 /* icon.icns */; };
+		5E7468962BD8ED7E0094C600 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7468952BD8ED7E0094C600 /* ShareViewController.swift */; };
+		5E7468992BD8ED7E0094C600 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5E7468982BD8ED7E0094C600 /* Base */; };
+		5E74689E2BD8ED7E0094C600 /* Copy Link.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5E7468912BD8ED7E0094C600 /* Copy Link.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5E834CEF2BB488300002CBDB /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E834CEE2BB488300002CBDB /* ServicesProvider.swift */; };
 		5E9B956F2BB31C370060C75E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B956E2BB31C370060C75E /* AppDelegate.swift */; };
 		5EA246B82BC6B921004EF586 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA246B72BC6B921004EF586 /* SettingsView.swift */; };
+		5EA9A5D12BDBC7C800C7A667 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9A5D02BDBC7C800C7A667 /* icon.icns */; };
+		5EA9A5D32BDBC7C800C7A667 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9A5D22BDBC7C800C7A667 /* ShareViewController.swift */; };
+		5EA9A5D62BDBC7C800C7A667 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9A5D52BDBC7C800C7A667 /* Base */; };
+		5EA9A5DB2BDBC7C800C7A667 /* Open In Safari Web App.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5EA9A5CE2BDBC7C800C7A667 /* Open In Safari Web App.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5EE1FFD92BB2937000A38679 /* OpenInSWAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */; };
 		5EE1FFDB2BB2937000A38679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDA2BB2937000A38679 /* ContentView.swift */; };
 		5EE1FFDD2BB2937200A38679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDC2BB2937200A38679 /* Assets.xcassets */; };
 		5EE1FFE02BB2937200A38679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1FFDF2BB2937200A38679 /* Preview Assets.xcassets */; };
-		5EE28ED92BBAF2F700C1CE5C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5EE28ED82BBAF2F700C1CE5C /* icon.icns */; };
-		5EE28EDB2BBAF2F700C1CE5C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE28EDA2BBAF2F700C1CE5C /* ShareViewController.swift */; };
-		5EE28EDE2BBAF2F700C1CE5C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5EE28EDD2BBAF2F700C1CE5C /* Base */; };
-		5EE28EE32BBAF2F700C1CE5C /* Open In SWA.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +40,26 @@
 			remoteGlobalIDString = 5E0944A12BCEB93F0005B1F1;
 			remoteInfo = "Open In Safari Private";
 		};
-		5EE28EE12BBAF2F700C1CE5C /* PBXContainerItemProxy */ = {
+		5E7468872BD8ECEC0094C600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5EE1FFCD2BB2937000A38679 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5EE28ED52BBAF2F700C1CE5C;
-			remoteInfo = "Open In SWA";
+			remoteGlobalIDString = 5E74687B2BD8ECEC0094C600;
+			remoteInfo = "Copy Image";
+		};
+		5E74689C2BD8ED7E0094C600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EE1FFCD2BB2937000A38679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E7468902BD8ED7E0094C600;
+			remoteInfo = "Copy Link";
+		};
+		5EA9A5D92BDBC7C800C7A667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EE1FFCD2BB2937000A38679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EA9A5CD2BDBC7C800C7A667;
+			remoteInfo = "Open In Safari Web App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,8 +70,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				5E74689E2BD8ED7E0094C600 /* Copy Link.appex in Embed Foundation Extensions */,
 				5E0944AF2BCEB93F0005B1F1 /* Open In Safari Private.appex in Embed Foundation Extensions */,
-				5EE28EE32BBAF2F700C1CE5C /* Open In SWA.appex in Embed Foundation Extensions */,
+				5EA9A5DB2BDBC7C800C7A667 /* Open In Safari Web App.appex in Embed Foundation Extensions */,
+				5E7468892BD8ECEC0094C600 /* Copy Image.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,10 +87,28 @@
 		5E0944A92BCEB93F0005B1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		5E0944AB2BCEB93F0005B1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E0944AC2BCEB93F0005B1F1 /* Open_In_Safari_Private.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Open_In_Safari_Private.entitlements; sourceTree = "<group>"; };
+		5E74687C2BD8ECEC0094C600 /* Copy Image.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Copy Image.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E74687E2BD8ECEC0094C600 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		5E7468802BD8ECEC0094C600 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5E7468832BD8ECEC0094C600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		5E7468852BD8ECEC0094C600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7468862BD8ECEC0094C600 /* Copy_Image.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Copy_Image.entitlements; sourceTree = "<group>"; };
+		5E7468912BD8ED7E0094C600 /* Copy Link.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Copy Link.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7468932BD8ED7E0094C600 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		5E7468952BD8ED7E0094C600 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5E7468982BD8ED7E0094C600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		5E74689A2BD8ED7E0094C600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E74689B2BD8ED7E0094C600 /* Copy_Link.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Copy_Link.entitlements; sourceTree = "<group>"; };
 		5E834CEE2BB488300002CBDB /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
 		5E9B956E2BB31C370060C75E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9B95702BB320B60060C75E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5EA246B72BC6B921004EF586 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5EA9A5CE2BDBC7C800C7A667 /* Open In Safari Web App.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open In Safari Web App.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA9A5D02BDBC7C800C7A667 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		5EA9A5D22BDBC7C800C7A667 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5EA9A5D52BDBC7C800C7A667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		5EA9A5D72BDBC7C800C7A667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA9A5D82BDBC7C800C7A667 /* Open_In_Safari_Web_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Open_In_Safari_Web_App.entitlements; sourceTree = "<group>"; };
 		5EB7DF8C2BB46F5E00F40AEE /* Open-in-SWA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Open-in-SWA-Info.plist"; sourceTree = "<group>"; };
 		5EE1FFD52BB2937000A38679 /* Open in SWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open in SWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE1FFD82BB2937000A38679 /* OpenInSWAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInSWAApp.swift; sourceTree = "<group>"; };
@@ -74,12 +116,6 @@
 		5EE1FFDC2BB2937200A38679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE1FFDF2BB2937200A38679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5EE1FFE12BB2937200A38679 /* OpenInSWA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenInSWA.entitlements; sourceTree = "<group>"; };
-		5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open In SWA.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE28ED82BBAF2F700C1CE5C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
-		5EE28EDA2BBAF2F700C1CE5C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		5EE28EDD2BBAF2F700C1CE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
-		5EE28EDF2BBAF2F700C1CE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EE28EE02BBAF2F700C1CE5C /* Open_In_SWA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Open_In_SWA.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +126,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EE1FFD22BB2937000A38679 /* Frameworks */ = {
+		5E7468792BD8ECEC0094C600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EE28ED32BBAF2F700C1CE5C /* Frameworks */ = {
+		5E74688E2BD8ED7E0094C600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA9A5CB2BDBC7C800C7A667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE1FFD22BB2937000A38679 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,14 +169,52 @@
 			path = "Open In Safari Private";
 			sourceTree = "<group>";
 		};
+		5E74687D2BD8ECEC0094C600 /* Copy Image */ = {
+			isa = PBXGroup;
+			children = (
+				5E74687E2BD8ECEC0094C600 /* icon.icns */,
+				5E7468802BD8ECEC0094C600 /* ShareViewController.swift */,
+				5E7468822BD8ECEC0094C600 /* ShareViewController.xib */,
+				5E7468852BD8ECEC0094C600 /* Info.plist */,
+				5E7468862BD8ECEC0094C600 /* Copy_Image.entitlements */,
+			);
+			path = "Copy Image";
+			sourceTree = "<group>";
+		};
+		5E7468922BD8ED7E0094C600 /* Copy Link */ = {
+			isa = PBXGroup;
+			children = (
+				5E7468932BD8ED7E0094C600 /* icon.icns */,
+				5E7468952BD8ED7E0094C600 /* ShareViewController.swift */,
+				5E7468972BD8ED7E0094C600 /* ShareViewController.xib */,
+				5E74689A2BD8ED7E0094C600 /* Info.plist */,
+				5E74689B2BD8ED7E0094C600 /* Copy_Link.entitlements */,
+			);
+			path = "Copy Link";
+			sourceTree = "<group>";
+		};
+		5EA9A5CF2BDBC7C800C7A667 /* Open In Safari Web App */ = {
+			isa = PBXGroup;
+			children = (
+				5EA9A5D02BDBC7C800C7A667 /* icon.icns */,
+				5EA9A5D22BDBC7C800C7A667 /* ShareViewController.swift */,
+				5EA9A5D42BDBC7C800C7A667 /* ShareViewController.xib */,
+				5EA9A5D72BDBC7C800C7A667 /* Info.plist */,
+				5EA9A5D82BDBC7C800C7A667 /* Open_In_Safari_Web_App.entitlements */,
+			);
+			path = "Open In Safari Web App";
+			sourceTree = "<group>";
+		};
 		5EE1FFCC2BB2937000A38679 = {
 			isa = PBXGroup;
 			children = (
 				5EB7DF8C2BB46F5E00F40AEE /* Open-in-SWA-Info.plist */,
 				5E9B95702BB320B60060C75E /* README.md */,
 				5EE1FFD72BB2937000A38679 /* OpenInSWA */,
-				5EE28ED72BBAF2F700C1CE5C /* Open In SWA */,
 				5E0944A32BCEB93F0005B1F1 /* Open In Safari Private */,
+				5E74687D2BD8ECEC0094C600 /* Copy Image */,
+				5E7468922BD8ED7E0094C600 /* Copy Link */,
+				5EA9A5CF2BDBC7C800C7A667 /* Open In Safari Web App */,
 				5EE1FFD62BB2937000A38679 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,8 +223,10 @@
 			isa = PBXGroup;
 			children = (
 				5EE1FFD52BB2937000A38679 /* Open in SWA.app */,
-				5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */,
 				5E0944A22BCEB93F0005B1F1 /* Open In Safari Private.appex */,
+				5E74687C2BD8ECEC0094C600 /* Copy Image.appex */,
+				5E7468912BD8ED7E0094C600 /* Copy Link.appex */,
+				5EA9A5CE2BDBC7C800C7A667 /* Open In Safari Web App.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,18 +254,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5EE28ED72BBAF2F700C1CE5C /* Open In SWA */ = {
-			isa = PBXGroup;
-			children = (
-				5EE28ED82BBAF2F700C1CE5C /* icon.icns */,
-				5EE28EDA2BBAF2F700C1CE5C /* ShareViewController.swift */,
-				5EE28EDC2BBAF2F700C1CE5C /* ShareViewController.xib */,
-				5EE28EDF2BBAF2F700C1CE5C /* Info.plist */,
-				5EE28EE02BBAF2F700C1CE5C /* Open_In_SWA.entitlements */,
-			);
-			path = "Open In SWA";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,6 +274,57 @@
 			productReference = 5E0944A22BCEB93F0005B1F1 /* Open In Safari Private.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		5E74687B2BD8ECEC0094C600 /* Copy Image */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E74688C2BD8ECEC0094C600 /* Build configuration list for PBXNativeTarget "Copy Image" */;
+			buildPhases = (
+				5E7468782BD8ECEC0094C600 /* Sources */,
+				5E7468792BD8ECEC0094C600 /* Frameworks */,
+				5E74687A2BD8ECEC0094C600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copy Image";
+			productName = "Copy Image";
+			productReference = 5E74687C2BD8ECEC0094C600 /* Copy Image.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5E7468902BD8ED7E0094C600 /* Copy Link */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E74689F2BD8ED7E0094C600 /* Build configuration list for PBXNativeTarget "Copy Link" */;
+			buildPhases = (
+				5E74688D2BD8ED7E0094C600 /* Sources */,
+				5E74688E2BD8ED7E0094C600 /* Frameworks */,
+				5E74688F2BD8ED7E0094C600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copy Link";
+			productName = "Copy Link";
+			productReference = 5E7468912BD8ED7E0094C600 /* Copy Link.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5EA9A5CD2BDBC7C800C7A667 /* Open In Safari Web App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA9A5DC2BDBC7C800C7A667 /* Build configuration list for PBXNativeTarget "Open In Safari Web App" */;
+			buildPhases = (
+				5EA9A5CA2BDBC7C800C7A667 /* Sources */,
+				5EA9A5CB2BDBC7C800C7A667 /* Frameworks */,
+				5EA9A5CC2BDBC7C800C7A667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open In Safari Web App";
+			productName = "Open In Safari Web App";
+			productReference = 5EA9A5CE2BDBC7C800C7A667 /* Open In Safari Web App.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5EE1FFD42BB2937000A38679 /* Open in SWA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EE1FFE42BB2937200A38679 /* Build configuration list for PBXNativeTarget "Open in SWA" */;
@@ -208,30 +337,15 @@
 			buildRules = (
 			);
 			dependencies = (
-				5EE28EE22BBAF2F700C1CE5C /* PBXTargetDependency */,
 				5E0944AE2BCEB93F0005B1F1 /* PBXTargetDependency */,
+				5E7468882BD8ECEC0094C600 /* PBXTargetDependency */,
+				5E74689D2BD8ED7E0094C600 /* PBXTargetDependency */,
+				5EA9A5DA2BDBC7C800C7A667 /* PBXTargetDependency */,
 			);
 			name = "Open in SWA";
 			productName = OpenInSWA;
 			productReference = 5EE1FFD52BB2937000A38679 /* Open in SWA.app */;
 			productType = "com.apple.product-type.application";
-		};
-		5EE28ED52BBAF2F700C1CE5C /* Open In SWA */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EE28EE42BBAF2F700C1CE5C /* Build configuration list for PBXNativeTarget "Open In SWA" */;
-			buildPhases = (
-				5EE28ED22BBAF2F700C1CE5C /* Sources */,
-				5EE28ED32BBAF2F700C1CE5C /* Frameworks */,
-				5EE28ED42BBAF2F700C1CE5C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Open In SWA";
-			productName = "Open In SWA";
-			productReference = 5EE28ED62BBAF2F700C1CE5C /* Open In SWA.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -246,10 +360,16 @@
 					5E0944A12BCEB93F0005B1F1 = {
 						CreatedOnToolsVersion = 15.3;
 					};
-					5EE1FFD42BB2937000A38679 = {
+					5E74687B2BD8ECEC0094C600 = {
 						CreatedOnToolsVersion = 15.3;
 					};
-					5EE28ED52BBAF2F700C1CE5C = {
+					5E7468902BD8ED7E0094C600 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					5EA9A5CD2BDBC7C800C7A667 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					5EE1FFD42BB2937000A38679 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -268,8 +388,10 @@
 			projectRoot = "";
 			targets = (
 				5EE1FFD42BB2937000A38679 /* Open in SWA */,
-				5EE28ED52BBAF2F700C1CE5C /* Open In SWA */,
+				5EA9A5CD2BDBC7C800C7A667 /* Open In Safari Web App */,
 				5E0944A12BCEB93F0005B1F1 /* Open In Safari Private */,
+				5E74687B2BD8ECEC0094C600 /* Copy Image */,
+				5E7468902BD8ED7E0094C600 /* Copy Link */,
 			);
 		};
 /* End PBXProject section */
@@ -284,21 +406,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E74687A2BD8ECEC0094C600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E74687F2BD8ECEC0094C600 /* icon.icns in Resources */,
+				5E7468842BD8ECEC0094C600 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E74688F2BD8ED7E0094C600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7468942BD8ED7E0094C600 /* icon.icns in Resources */,
+				5E7468992BD8ED7E0094C600 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA9A5CC2BDBC7C800C7A667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA9A5D12BDBC7C800C7A667 /* icon.icns in Resources */,
+				5EA9A5D62BDBC7C800C7A667 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EE1FFD32BB2937000A38679 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5EE1FFE02BB2937200A38679 /* Preview Assets.xcassets in Resources */,
 				5EE1FFDD2BB2937200A38679 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EE28ED42BBAF2F700C1CE5C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EE28ED92BBAF2F700C1CE5C /* icon.icns in Resources */,
-				5EE28EDE2BBAF2F700C1CE5C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +450,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0944A72BCEB93F0005B1F1 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7468782BD8ECEC0094C600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7468812BD8ECEC0094C600 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E74688D2BD8ED7E0094C600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7468962BD8ED7E0094C600 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA9A5CA2BDBC7C800C7A667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA9A5D32BDBC7C800C7A667 /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,14 +489,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EE28ED22BBAF2F700C1CE5C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EE28EDB2BBAF2F700C1CE5C /* ShareViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -341,10 +497,20 @@
 			target = 5E0944A12BCEB93F0005B1F1 /* Open In Safari Private */;
 			targetProxy = 5E0944AD2BCEB93F0005B1F1 /* PBXContainerItemProxy */;
 		};
-		5EE28EE22BBAF2F700C1CE5C /* PBXTargetDependency */ = {
+		5E7468882BD8ECEC0094C600 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5EE28ED52BBAF2F700C1CE5C /* Open In SWA */;
-			targetProxy = 5EE28EE12BBAF2F700C1CE5C /* PBXContainerItemProxy */;
+			target = 5E74687B2BD8ECEC0094C600 /* Copy Image */;
+			targetProxy = 5E7468872BD8ECEC0094C600 /* PBXContainerItemProxy */;
+		};
+		5E74689D2BD8ED7E0094C600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E7468902BD8ED7E0094C600 /* Copy Link */;
+			targetProxy = 5E74689C2BD8ED7E0094C600 /* PBXContainerItemProxy */;
+		};
+		5EA9A5DA2BDBC7C800C7A667 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EA9A5CD2BDBC7C800C7A667 /* Open In Safari Web App */;
+			targetProxy = 5EA9A5D92BDBC7C800C7A667 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,10 +523,26 @@
 			name = ShareViewController.xib;
 			sourceTree = "<group>";
 		};
-		5EE28EDC2BBAF2F700C1CE5C /* ShareViewController.xib */ = {
+		5E7468822BD8ECEC0094C600 /* ShareViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5EE28EDD2BBAF2F700C1CE5C /* Base */,
+				5E7468832BD8ECEC0094C600 /* Base */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+		5E7468972BD8ED7E0094C600 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E7468982BD8ED7E0094C600 /* Base */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+		5EA9A5D42BDBC7C800C7A667 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA9A5D52BDBC7C800C7A667 /* Base */,
 			);
 			name = ShareViewController.xib;
 			sourceTree = "<group>";
@@ -415,6 +597,168 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.SafariPrivate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5E74688A2BD8ECEC0094C600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Copy Image/Copy_Image.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Copy Image/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copy Image";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.CopyImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5E74688B2BD8ECEC0094C600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Copy Image/Copy_Image.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Copy Image/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copy Image";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.CopyImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5E7468A02BD8ED7E0094C600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Copy Link/Copy_Link.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Copy Link/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copy Link";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.CopyLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5E7468A12BD8ED7E0094C600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Copy Link/Copy_Link.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Copy Link/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copy Link";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.CopyLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5EA9A5DD2BDBC7C800C7A667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open In Safari Web App/Open_In_Safari_Web_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open In Safari Web App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Open In Safari Web App";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.yuhapps.OpenInSWA.Open-In-Safari-Web-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5EA9A5DE2BDBC7C800C7A667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open In Safari Web App/Open_In_Safari_Web_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQTYUZQ47C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Open In Safari Web App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Open In Safari Web App";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.yuhapps.OpenInSWA.Open-In-Safari-Web-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -602,62 +946,6 @@
 			};
 			name = Release;
 		};
-		5EE28EE52BBAF2F700C1CE5C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Open In SWA/Open_In_SWA.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VQTYUZQ47C;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Open In SWA/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Open In SWA";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.QuickOpen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		5EE28EE62BBAF2F700C1CE5C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Open In SWA/Open_In_SWA.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VQTYUZQ47C;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Open In SWA/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Open In SWA";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.yuhapps.OpenInSWA.QuickOpen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -666,6 +954,33 @@
 			buildConfigurations = (
 				5E0944B02BCEB93F0005B1F1 /* Debug */,
 				5E0944B12BCEB93F0005B1F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E74688C2BD8ECEC0094C600 /* Build configuration list for PBXNativeTarget "Copy Image" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E74688A2BD8ECEC0094C600 /* Debug */,
+				5E74688B2BD8ECEC0094C600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E74689F2BD8ED7E0094C600 /* Build configuration list for PBXNativeTarget "Copy Link" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7468A02BD8ED7E0094C600 /* Debug */,
+				5E7468A12BD8ED7E0094C600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA9A5DC2BDBC7C800C7A667 /* Build configuration list for PBXNativeTarget "Open In Safari Web App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA9A5DD2BDBC7C800C7A667 /* Debug */,
+				5EA9A5DE2BDBC7C800C7A667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -684,15 +999,6 @@
 			buildConfigurations = (
 				5EE1FFE52BB2937200A38679 /* Debug */,
 				5EE1FFE62BB2937200A38679 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5EE28EE42BBAF2F700C1CE5C /* Build configuration list for PBXNativeTarget "Open In SWA" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EE28EE52BBAF2F700C1CE5C /* Debug */,
-				5EE28EE62BBAF2F700C1CE5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

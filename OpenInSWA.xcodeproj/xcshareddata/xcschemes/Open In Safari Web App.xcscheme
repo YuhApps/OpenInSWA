@@ -16,9 +16,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5EE28ED52BBAF2F700C1CE5C"
-               BuildableName = "Open In SWA.appex"
-               BlueprintName = "Open In SWA"
+               BlueprintIdentifier = "5EA9A5CD2BDBC7C800C7A667"
+               BuildableName = "Open In Safari Web App.appex"
+               BlueprintName = "Open In Safari Web App"
                ReferencedContainer = "container:OpenInSWA.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

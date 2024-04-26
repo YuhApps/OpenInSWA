@@ -1,5 +1,6 @@
 //
 //  ShareViewController.swift
+//  Copy Link
 //
 //  Created by YUH APPS on 1/4/24.
 //
@@ -21,17 +22,14 @@ class ShareViewController: NSViewController {
         if let attachment = item.attachments?.first as? NSItemProvider {
             if attachment.hasItemConformingToTypeIdentifier(UTType.url.identifier) {
                 attachment.loadObject(ofClass: URL.self) { url, error in
-                    let bundle = Bundle.main
-                    let containerAppBundle = bundle.bundleURL.deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
-                    NSWorkspace.shared.open([url!], withApplicationAt: containerAppBundle, configuration: NSWorkspace.OpenConfiguration()) { _,_ in
-                        let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSUserCancelledError, userInfo: nil)
-                        self.extensionContext!.cancelRequest(withError: cancelError)
-                    }
+                    guard let url = url else { return }
+                    let pasteboard = NSPasteboard.general
+                    pasteboard.clearContents()
+                    pasteboard.setString(url.absoluteString, forType: .string)
                 }
             }
-        } else {
-            NSLog("No Attachments")
         }
+        self.extensionContext!.completeRequest(returningItems: [NSExtensionItem()], completionHandler: nil)
     }
 
     /*

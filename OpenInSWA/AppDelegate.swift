@@ -18,6 +18,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         removeUnncessaryMenuItems()
     }
     
+    func applicationDidBecomeActive(_ notification: Notification) {
+        removeUnncessaryMenuItems()
+    }
+    
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         false
     }

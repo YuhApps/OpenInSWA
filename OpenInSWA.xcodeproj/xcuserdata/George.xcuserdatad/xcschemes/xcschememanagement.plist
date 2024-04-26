@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Open In SWA (extension).xcscheme_^#shared#^_</key>
+		<key>Copy Image.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
+		</dict>
+		<key>Copy Link.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Open In SWA.xcscheme_^#shared#^_</key>
 		<dict>
@@ -19,7 +24,12 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Open in SWA (main).xcscheme_^#shared#^_</key>
+		<key>Open In Safari Web App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Open in SWA.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -42,6 +52,26 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5E0944A12BCEB93F0005B1F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E74687B2BD8ECEC0094C600</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E7468902BD8ED7E0094C600</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5EA9A5CD2BDBC7C800C7A667</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5EB9C63F2BB2EE400061B342</key>
 		<dict>
 			<key>primary</key>

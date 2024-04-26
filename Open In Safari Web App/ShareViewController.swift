@@ -1,7 +1,7 @@
 //
 //  ShareViewController.swift
 //
-//  Created by YUH APPS on 16/4/24.
+//  Created by YUH APPS on 1/4/24.
 //
 
 import Cocoa
@@ -23,15 +23,12 @@ class ShareViewController: NSViewController {
                 attachment.loadObject(ofClass: URL.self) { url, error in
                     let bundle = Bundle.main
                     let containerAppBundle = bundle.bundleURL.deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
-                    let newURL = URL(string: "x-safari-private-" + url!.absoluteString)
-                    NSWorkspace.shared.open([newURL!], withApplicationAt: containerAppBundle, configuration: NSWorkspace.OpenConfiguration()) { _,_ in
-                        let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSUserCancelledError, userInfo: nil)
-                        self.extensionContext!.cancelRequest(withError: cancelError)
+                    NSWorkspace.shared.open([url!], withApplicationAt: containerAppBundle, configuration: NSWorkspace.OpenConfiguration()) { _,_ in
+                        self.extensionContext!.completeRequest(returningItems: [NSExtensionItem()], completionHandler: nil)
                     }
                 }
             }
         }
-        self.extensionContext!.completeRequest(returningItems: [NSExtensionItem()], completionHandler: nil)
     }
 
     /*
