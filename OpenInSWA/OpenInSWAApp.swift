@@ -33,7 +33,7 @@ struct OpenInSWAApp: App {
         }
     }
     
-    let build_date = "(2024.04.16)"
+    let build_date = "(2024.04.26)"
     
     var body: some Scene {
         Window("Open in Safari Web App", id: "main") {
