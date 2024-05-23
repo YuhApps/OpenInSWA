@@ -19,13 +19,26 @@ class ShareViewController: NSViewController {
     
         // Insert code here to customize the view
         let item = self.extensionContext!.inputItems[0] as! NSExtensionItem
-        if let attachment = item.attachments?.first as? NSItemProvider {
-            if attachment.hasItemConformingToTypeIdentifier(UTType.url.identifier) {
-                attachment.loadObject(ofClass: URL.self) { url, error in
-                    guard let url = url else { return }
-                    let pasteboard = NSPasteboard.general
-                    pasteboard.clearContents()
-                    pasteboard.setString(url.absoluteString, forType: .string)
+        for attachment in item.attachments! {
+            if attachment.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
+                attachment.loadItem(forTypeIdentifier: UTType.image.identifier) { image, error in
+                    if let image = image as? NSImage {
+                        let pasteboard = NSPasteboard.general
+                        pasteboard.clearContents()
+                        pasteboard.setData(image.tiffRepresentation, forType: .tiff)
+                    } else {
+                        print(error ?? "ERROR")
+                    }
+                }
+            } else if attachment.hasItemConformingToTypeIdentifier(UTType.url.identifier) {
+                attachment.loadItem(forTypeIdentifier: UTType.url.identifier) { url, error in
+                    if let url = url as? URL {
+                        let pasteboard = NSPasteboard.general
+                        pasteboard.clearContents()
+                        pasteboard.setString(url.absoluteString, forType: .string)
+                    } else {
+                        print(error ?? "ERROR")
+                    }
                 }
             }
         }

@@ -21,7 +21,6 @@ class ShareViewController: NSViewController {
         let item = self.extensionContext!.inputItems[0] as! NSExtensionItem
         for attachment in item.attachments! {
             if attachment.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
-                print("ABC")
                 attachment.loadItem(forTypeIdentifier: UTType.image.identifier) { image, error in
                     if let image = image as? NSImage {
                         let pasteboard = NSPasteboard.general
